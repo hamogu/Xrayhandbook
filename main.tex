@@ -1,14 +1,131 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+%%%%%%%%%%%%%%%%%%%% author.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Template for the Handbook of X-ray and Gamma-ray Astrophysics (preliminary version)
+%
+%%%%%%%%%%%%%%%% Springer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox, nosecnum]{svmult}
 
-\title{Xrayhandbook}
-\author{Hans Moritz Guenther}
-\date{May 2021}
+% choose options for [] as required from the list
+% in the Reference Guide
+
+\usepackage{mathptmx}       % selects Times Roman as basic font
+\usepackage{helvet}         % selects Helvetica as sans-serif font
+\usepackage{courier}        % selects Courier as typewriter font
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+%
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+\usepackage{hyperref}        %for hyperlinks
+\usepackage{soul}            % for high-lighting of text
+\hypersetup{colorlinks=true,urlcolor=blue}
+%
+\usepackage[square,numbers]{natbib}
+%\bibliographystyle{ieeetr}
+\newcommand{\hbindex}[1]{\hl{#1}\index{#1}}  %highlights index entries
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-
+%\tableofcontents{}
+\title*{Pre main sequence:  Accretion \& Outflows}
+% Use \titlerunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\author{Christian P. Schneider  \thanks{corresponding author}, H. Moritz G\"unther and S. Ustamujic}
+% Use \authorrunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\institute{Christian P. Schneider \at Institute 1, Address of Institute 1, \email{name1@email.address}
+\and H. Moritz G\"unther \at Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology,
+77 Massachusetts Avenue, Cambridge, MA 02139, USA \email{hgunther@mit.edu}
+\and S. Ustamujic \at Institute 2, Address of Institute 2 \email{sabina.ustamujic@inaf.it}}
+%
+% Use the package "url.sty" to avoid
+% problems with special characters
+% used in your e-mail or web address
+%
 \maketitle
+%
+\abstract{Each chapter should be preceded by an abstract (about 250 words) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. Please do not include reference citations, cross-references or undefined abbreviations in the abstract.}
+\section{Keywords}
+Please provide keywords required to facilitate search of chapter on web; maximum 10 keywords.
+
 
 \section{Introduction}
+(3 pages) [Christian]
+\subsection{Relevant History of T Tauri Stars}
+\subsection{Properties of T Tauri star systems}
+(disk, accretion, outflows)
+\subsection{Brief context of other relevant observations}
+(Ha for accretion, images/IFU for jets)
+
+\section{Accretion}
+(10 pages)
+\subsection{Physics of accretion}
+(free-fall, accretion shock, plasma temperature, X-ray emission, etc.) [Moritz, Sabina]
+\subsection{Observations of Accretion signatures}
+           Moritz, Christian
+\subsection{Models}
+           (historic evolution of models and aspects addressed by models) [Moritz, (Sabina)]
+\subsection{Connection to other observations}
+           Moritz
+
+\section{Jets}
+         (10 pages)
+\subsection{Physics of jets}
+(jet origin, collimation, jet velocities) [Christian, Sabina]
+
+\subsection{X-ray jet observations}
+           Christian
+\subsection{Models of X-ray emission from jets}
+                      Sabina
+\subsection{Connection to other obs}
+                                Christian
+
+\section{Outlook}
+(2 pages) [all]
+
+
+\section{Instruction - DELETE}
+
+\vspace{0.3cm}
+
+{\bf Key-points to have in mind}:
+\begin{enumerate}
+\item The {\it Handbook of X-ray and Gamma-ray Astrophysics} is aiming to publish a work of tertiary literature, which provides easily accessible, digested and established knowledge derived from primary or secondary sources in the particular field. Therefore, your contribution should be clear and concise and be a comprehensive and up-to-date overview of your topic.
+\item Length of text: every chapter normally consists of about 10,000-20,000 words (excluding figures and references), which would be about 20-40 typeset pages. However, this is not a rigid rule and it is something to discuss with the Section Editors of the Section of the chapter.
+\item Colored figures are welcome in any standard format (jpg, tif, ppt, gif). If possible please provide the original figure in high resolution (300 dpi minimum). {\color{red}\bf Please do not forget to obtain permission in case the figure is from a published article}. For journals like ApJ, PRD, PRL, etc. you do not need the permission if you are an author of the article of the original figures, but for most journals you need the permission even if you are the author of those figures. However, if you create a new figures with minor changes, you can claim it is a new figure and you do not need any permission.
+\end{enumerate}
+
+
+\vspace{0.5cm}
+
+{\bf Submission}:
+
+\vspace{0.1cm}
+
+{\color{red} \bf Please submit source files, compiled pdf file of the chapter, and figure permissions through the Meteor system.}
+
+\vspace{0.5cm}
+
+{\bf arXiv policy}:
+
+\vspace{0.1cm}
+
+{Authors can post their chapter on arXiv if they wish to do it. In the comment field, please write something like ``Invited chapter for {\it Handbook of X-ray and Gamma-ray Astrophysics} (Eds. C. Bambi and A. Santangelo, Springer Singapore, expected in 2022)''. After the publication of the chapter, you may add the DOI on the arXiv page.}
+
+
+
+\section{Cross-References \textit{(if applicable)}}
+Include a list of related entries from the handbook here that may be of further interest to the readers.
+
+% bibs will be alphametically ordered. I think that's what they want.
+% if not, see: https://tex.stackexchange.com/questions/312819/problem-with-springer-bibliography-stylespbasic-natbib
+\bibliographystyle{spbasic}
+\bibliography{bib.bib}
 
 \end{document}
